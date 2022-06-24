@@ -1,0 +1,1468 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>AFAC</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="A fully featured admin theme which can be used to build CRM, CMS, etc." name="description" />
+    <meta content="Coderthemes" name="author" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- App favicon -->
+    <link rel="shortcut icon" href="assets/images/favicon.ico">
+
+    <!-- summernote css -->
+    <link href="assets/libs/summernote/summernote-bs4.css" rel="stylesheet" />
+
+    <!-- Custom box css -->
+    <link href="assets/libs/custombox/custombox.min.css" rel="stylesheet">
+
+    <!-- App css -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/app.min.css" rel="stylesheet" type="text/css" />
+    <!-- <style>
+        #deneme{
+            
+            font-size: small;
+        }
+    </style> -->
+
+</head>
+
+<body>
+
+    <!-- Begin page -->
+    <div id="wrapper">
+
+        <!-- Topbar Start -->
+        <div class="navbar-custom">
+            <!-- <span class="logo-lg">
+                <img class="ml-3 mt-1" src="assets/images/logo-light.png" alt="" height="55" width="150">
+                <span class="logo-lg-text-light"></span>
+            </span> -->
+            <ul class="list-unstyled topnav-menu float-right mb-0">
+                 <!--buradayım-->
+                <li class="dropdown notification-list">
+                    <a class="nav-link dropdown-toggle waves-effect ml-2" data-toggle="dropdown" href="#" role="button"
+                        aria-haspopup="false" aria-expanded="false">
+
+                        Çalışmalarımız<i class="mdi mdi-chevron-down"></i>
+                    </a>
+
+                    <div class="dropdown-menu dropdown-menu-right dropdown-lg">
+
+                        <!-- item-->
+                        <div class="dropdown-item noti-title">
+                           <h6>Çalışmlarınız sayfası</h6>
+                        </div>
+                        <div class="slimscroll noti-scroll">
+                            <a href="javascript:void(0);" class="dropdown-item notify-item active">
+                                <div class="notify-icon">
+                                    <img src="assets/images/users/user-1.jpg" class="img-fluid rounded-circle" alt="" />
+                                </div>
+                                <p class="notify-details">Bana Atananlar</p>
+                                <p class="text-muted mb-0 user-msg">
+                                    <small>Size Atanmış bir çalışma yok</small>
+                                </p>
+                            </a>
+                            <a href="jirakonular.html" class="dropdown-item notify-item">
+                                <div class="notify-icon bg-primary"></div>
+                                <p class="notify-details"> En Son</p>
+                            </a>
+                            <a href="jirakonular.html" class="dropdown-item notify-item">
+                                <div class="notify-icon bg-primary"></div>
+                                <p class="notify-details"> Panolar
+                                </p>
+                            </a>
+                        </div>
+
+                        <!-- All-->
+                        <a href="javascript:void(0);"
+                            class="dropdown-item text-center text-primary notify-item notify-all">
+                            View all
+                            <i class="fi-arrow-right"></i>
+                        </a>
+
+                    </div>
+                </li>
+                <li class="dropdown notification-list">
+                    <a class="nav-link dropdown-toggle waves-effect" data-toggle="dropdown" href="#" role="button"
+                        aria-haspopup="false" aria-expanded="false">
+
+                        Projeler<i class="mdi mdi-chevron-down"></i>
+                    </a>
+
+                    <div class="dropdown-menu dropdown-menu-right dropdown-lg">
+
+                        <!-- item-->
+                        <div class="dropdown-item noti-title">
+                            <h5 class="m-0"> EN SON</h5>
+                        </div>  
+                       <div class="slimscroll noti-scroll">
+                            <!-- item-->
+                            <a href="jirakonular.html" class="dropdown-item notify-item">
+                                <div class="notify-icon bg-primary"></div>
+                                <p class="notify-details">STKARIZATALEP(STKAR)</p>
+                            </a>
+                            <a href="jirakonular.html" class="dropdown-item notify-item">
+                                <div class="notify-icon bg-primary"></div>
+                                <p class="notify-details"> stk-port(SP)
+                                </p>
+                            </a>
+                        </div>
+                        <!-- All-->
+                        <a href="javascript:void(0);"
+                            class="dropdown-item text-center text-primary notify-item notify-all">
+                            Tüm projeleri görüntüleyin
+                            <i class="fi-arrow-right"></i>
+                        </a>
+                        <button style="height: 35px; width: 250px;"type="button"
+                        class="btn btn-secondary waves-effect waves-light mb-1 mt-1 ml-4"
+                        data-toggle="modal"
+                        data-target="#projeolustur">Proje Oluştur</button>
+                        
+                    </div>
+                </li>
+
+                <li class="dropdown notification-list">
+                    <a class="nav-link dropdown-toggle waves-effect" data-toggle="dropdown" href="#" role="button"
+                        aria-haspopup="false" aria-expanded="false">
+
+                        Filtreler<i class="mdi mdi-chevron-down"></i>
+                    </a>
+
+                    <div class="dropdown-menu dropdown-menu-right dropdown-lg">
+
+                        <!-- item-->
+                        <div class="dropdown-item noti-title">
+                            <h5 class="m-0"> EN SON</h5>
+                        </div>
+
+                        <div class="slimscroll noti-scroll">
+
+                            <!-- item-->
+                            <a href="javascript:void(0);" class="dropdown-item notify-item active">
+                                <div class="notify-icon">
+                                    <i class="mdi mdi-filter-variant"></i>
+                                </div>
+                                <p class="notify-details">Açık Konular</p>
+                            </a>
+                            <a href="javascript:void(0);" class="dropdown-item notify-item active">
+                                <div class="notify-icon">
+                                    <i class="mdi mdi-filter-variant"></i>
+                                </div>
+                                <p class="notify-details">Tamamlanan konular</p>
+                            </a>
+                            <a href="javascript:void(0);" class="dropdown-item notify-item active">
+                                <div class="notify-icon">
+                                    <i class="mdi mdi-filter-variant"></i>
+                                </div>
+                                <p class="notify-details">Yakın zamanda oluşturulanlar</p>
+                            </a>
+                        </div>
+
+                        <!-- All-->
+                        <a href="jirakonular.html"
+                            class="dropdown-item text-center text-primary notify-item notify-all">
+                            Gelişmiş konu araması
+                            <i class="fi-arrow-right"></i>
+                        </a>
+
+                    </div>
+                </li>
+
+              
+                <li class="dropdown notification-list">
+                    <a class="nav-link dropdown-toggle waves-effect" data-toggle="dropdown" href="#" role="button"
+                        aria-haspopup="false" aria-expanded="false">
+
+                        Kişiler<i class="mdi mdi-chevron-down"></i>
+                    </a>
+
+                    <div class="dropdown-menu dropdown-menu-right dropdown-lg">
+
+                        <!-- item-->
+                        <div class="dropdown-item noti-title">
+                            <h5 class="m-0"> Takım Arkadaşlarınız</h5>
+                        </div>
+
+                        <div class="slimscroll noti-scroll">
+
+                            <!-- item-->
+                            <a href="javascript:void(0);" class="dropdown-item notify-item active">
+                                <div class="notify-icon">
+                                    <img height="24px" src="assets/images/users/user-1.jpg" class="rounded-circle">
+                                </div>
+                                <p class="notify-details">İrfan Koçaksoy</p>
+                            </a>
+                            <a href="javascript:void(0);" class="dropdown-item notify-item active">
+                                <div class="notify-icon">
+                                    <img height="24px" src="assets/images/users/user-1.jpg" class="rounded-circle">
+                                </div>
+                                <p class="notify-details">Hüseyin Saygı</p>
+                            </a>
+                            <a href="javascript:void(0);" class="dropdown-item notify-item active">
+                                <div class="notify-icon">
+                                    <i class="mdi mdi-plus"></i>
+                                </div>
+                                <p class="notify-details">Bir takım arkadaşı davet et</p>
+                            </a>
+                            <a href="javascript:void(0);" class="dropdown-item notify-item active">
+                                <div class="notify-icon">
+                                    <i class="mdi mdi-plus"></i>
+                                </div>
+                                <p class="notify-details">Bir takım oluştur</p>
+                            </a>
+                           
+                        </div>
+
+                        <!-- All-->
+                        <a href="jirakonular.html"
+                            class="dropdown-item text-center text-primary notify-item notify-all">
+                           
+                           Kişi veya takım arayın
+                        </a>
+
+                    </div>
+                </li>
+           
+                <li class="d-none d-sm-block ml-5">
+                    <form class="app-search">
+                        <div class="app-search-box">
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="Search...">
+                                <div class="input-group-append">
+                                    <button class="btn" type="submit">
+                                        <i class="fe-search"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </li>
+
+                <li class="dropdown notification-list">
+                    <a class="nav-link dropdown-toggle nav-user mr-0 waves-effect" data-toggle="dropdown" href="#"
+                        role="button" aria-haspopup="false" aria-expanded="false">
+                        <img src="assets/images/users/user-1.jpg" alt="user-image" class="rounded-circle">
+                        <span id="user"class="pro-user-name ml-1">
+                            İrfan Koçaksoy <i class="mdi mdi-chevron-down"></i>
+                        </span>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right profile-dropdown ">
+                        <!-- item-->
+                        <div class="dropdown-header noti-title">
+                            <h6 class="text-overflow m-0">Welcome !</h6>
+                        </div>
+
+                        <!-- item-->
+                        <a href="javascript:void(0);" class="dropdown-item notify-item">
+                            <i class="fe-user"></i>
+                            <span>My Account</span>
+                        </a>
+
+                        <!-- item-->
+                        <a href="javascript:void(0);" class="dropdown-item notify-item">
+                            <i class="fe-settings"></i>
+                            <span>Settings</span>
+                        </a>
+
+                        <!-- item-->
+                        <a href="javascript:void(0);" class="dropdown-item notify-item">
+                            <i class="fe-lock"></i>
+                            <span>Lock Screen</span>
+                        </a>
+
+                        <div class="dropdown-divider"></div>
+
+                        <!-- item-->
+                        <a href="javascript:void(0);" class="dropdown-item notify-item">
+                            <i class="fe-log-out"></i>
+                            <span>Logout</span>
+                        </a>
+
+                    </div>
+                </li>
+
+                <li class="dropdown notification-list">
+                    <a href="javascript:void(0);" class="nav-link right-bar-toggle waves-effect">
+                        <i class="fe-settings noti-icon"></i>
+                    </a>
+                </li>
+                <!--burada-->
+
+            </ul>
+
+            <!-- LOGO -->
+
+            <!-- <ul class="list-unstyled topnav-menu topnav-menu-left m-0">
+               
+                <li class="dropdown notification-list">
+                    <a href="javascript:void(0);" class="nav-link right-bar-toggle waves-effect">
+                        <i class="fe-settings noti-icon"></i>
+                    </a>
+                </li>
+               
+
+            </ul> -->
+        </div>
+        <!-- end Topbar  -->
+
+        <!-- ========== Left Sidebar Start ========== -->
+
+
+        <!-- ============================================================== -->
+        <!-- Start Page Content here -->
+        <!-- ============================================================== -->
+
+
+
+        <div class="">
+            <div class="">
+
+                <!-- Start Content-->
+                <div class="">
+
+                    <div class="row">
+
+                        <div class="col-12">
+                            <div class="inbox-app-main">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <aside id="sidebar" class="nano">
+                                            <div class="nano-content">
+
+                                                <h4 class="text-center">Konular</h4>
+
+                                                <div class="text-center">
+                                                    <button type="button"
+                                                        class="btn btn-danger btn-rounded width-lg waves-effect waves-light mb-2 mt-4"
+                                                        data-toggle="modal"
+                                                        data-target="#exampleModalScrollable">Oluştur</button>
+                                                    <!-- <a href="#custom-modal" class="btn btn-danger btn-rounded width-lg waves-effect waves-light mb-2 mt-3" data-animation="fadein" data-plugin="custommodal" data-overlayColor="#36404a">Oluştur</a> -->
+                                                </div>
+                                                <menu class="menu-segment">
+                                                    <ul class="list-unstyled">
+                                                        <li class="active"><a
+                                                                href="javascript:void(0);">Filtreler<span></span></a>
+                                                        </li>
+                                                        <li><a href="javascript:void(0);">Tüm konular</a></li>
+                                                        <li><a href="javascript:void(0);">Açık konularım</a></li>
+                                                        <li><a href="javascript:void(0);">Benim raaporladıklarım</a>
+                                                        </li>
+                                                        <li><a href="javascript:void(0);">Açık konular</a></li>
+                                                        <li><a href="javascript:void(0);">Tamamlanan konular</a></li>
+                                                        <li><a href="javascript:void(0);">Yakı zamanda
+                                                                görüntülenenler</a></li>
+                                                        <li><a href="javascript:void(0);">Yakın zamanda çözülenler</a>
+                                                        </li>
+                                                        <li><a href="javascript:void(0);">Yakında güncellenenler</a>
+                                                        </li>
+                                                    </ul>
+                                                    <div class="separator"></div>
+                                                    <a class="text-white" href="filtreler">Tüm filtreleri görüntüle</a>
+                                                </menu>
+                                                <div class="separator"></div>
+                                                <div class="bottom-padding"></div>
+                                            </div>
+                                        </aside>
+                                    </div> <!-- end col -->
+
+                                    <div class="col-md-9">
+                                        <main id="main">
+                                            <div class="overlay"></div>
+                                            <header class="header">
+                                                <a href="#">Projeler</a> / <a href="#">STK</a>
+                                                <h3>Konular</h3>
+
+                                                <div class="btn-group mb-1">
+
+
+                                                    <h1 class="page-title"><a
+                                                            class="sidebar-toggle-btn trigger-toggle-sidebar"><span
+                                                                class="line"></span><span class="line"></span><span
+                                                                class="line"></span><span
+                                                                class="line line-angle1"></span><span
+                                                                class="line line-angle2"></span></a></h1>
+                                                    <div class="action-bar float-left">
+                                                        <ul class="list-inline mb-1">
+                                                            <div class="btn-group mt-1 ml-1">
+                                                                <button type="button"
+                                                                    class="btn btn-secondary dropdown-toggle waves-effect waves-light"
+                                                                    data-toggle="dropdown" aria-expanded="false">Proje
+                                                                    <i class="mdi mdi-chevron-down"></i></button>
+                                                                <div class="dropdown-menu">
+                                                                    <a href="javascript:void(0);"
+                                                                        class="dropdown-item">STKARIZATALEP</a>
+                                                                    <a href="javascript:void(0);"
+                                                                        class="dropdown-item">stk-port</a>
+                                                                    <option class="dropdown-item">stk-port</option>
+
+                                                                </div>
+                                                            </div>
+                                                            <div class="btn-group mt-1 ml-1">
+                                                                <button type="button"
+                                                                    class="btn btn-secondary dropdown-toggle waves-effect waves-light"
+                                                                    data-toggle="dropdown" aria-expanded="false">Tür <i
+                                                                        class="mdi mdi-chevron-down"></i></button>
+                                                                <div class="dropdown-menu">
+                                                                    <a href="javascript:void(0);"
+                                                                        class="dropdown-item">Epic</a>
+                                                                    <a href="javascript:void(0);"
+                                                                        class="dropdown-item">Bug</a>
+                                                                    <a href="javascript:void(0);"
+                                                                        class="dropdown-item">Improvement</a>
+                                                                    <a href="javascript:void(0);"
+                                                                        class="dropdown-item">New Feature</a>
+                                                                    <a href="javascript:void(0);"
+                                                                        class="dropdown-item">Sub-task</a>
+                                                                </div>
+                                                            </div>
+                                                            <div class="btn-group mt-1 ml-1">
+                                                                <button type="button"
+                                                                    class="btn btn-secondary dropdown-toggle waves-effect waves-light"
+                                                                    data-toggle="dropdown" aria-expanded="false">Durum
+                                                                    <i class="mdi mdi-chevron-down"></i></button>
+                                                                <div class="dropdown-menu">
+                                                                    <a href="javascript:void(0);"
+                                                                        class="dropdown-item">TAMAM</a>
+                                                                    <a href="javascript:void(0);"
+                                                                        class="dropdown-item">DEVAM EDİYOR</a>
+                                                                    <a href="javascript:void(0);"
+                                                                        class="dropdown-item">INCELENIYOR</a>
+                                                                    <a href="javascript:void(0);"
+                                                                        class="dropdown-item">YAPILCAKLAR</a>
+                                                                </div>
+                                                            </div>
+                                                            <div class="btn-group mt-1 ml-1">
+                                                                <button type="button"
+                                                                    class="btn btn-secondary dropdown-toggle waves-effect waves-light"
+                                                                    data-toggle="dropdown"
+                                                                    aria-expanded="false">Atanan<i
+                                                                        class="mdi mdi-chevron-down"></i></button>
+                                                                <div class="dropdown-menu">
+                                                                    <a href="javascript:void(0);"
+                                                                        class="dropdown-item">Mevcut Kullanıcı</a>
+                                                                    <a href="javascript:void(0);"
+                                                                        class="dropdown-item">Atanmamış</a>
+
+                                                                    <a href="javascript:void(0);"
+                                                                        class="dropdown-item">İrfan Koçaksoy</a>
+                                                                </div>
+                                                            </div>
+                                                            <div class="btn-group mt-1 ml-1">
+                                                                <button type="button"
+                                                                    class="btn btn-secondary dropdown-toggle waves-effect waves-light"
+                                                                    data-toggle="dropdown"
+                                                                    aria-expanded="false">Öncelik<i
+                                                                        class="mdi mdi-chevron-down"></i></button>
+                                                                <div class="dropdown-menu">
+                                                                    <a href="javascript:void(0);"
+                                                                        class="dropdown-item"><span><img id="raporlayan"
+                                                                                height="16px"
+                                                                                src="assets/images/medium.svg"
+                                                                                alt="raporlayan-image"
+                                                                                class="rounded-circle"></span>
+                                                                        Medium</a>
+                                                                    <a href="javascript:void(0);"
+                                                                        class="dropdown-item"><span><img id="raporlayan"
+                                                                                height="16px"
+                                                                                src="assets/images/highest.svg"
+                                                                                alt="raporlayan-image"
+                                                                                class="rounded-circle"></span>
+                                                                        Highest</a>
+                                                                    <a href="javascript:void(0);"
+                                                                        class="dropdown-item"><span><img id="raporlayan"
+                                                                                height="16px"
+                                                                                src="assets/images/high.svg"
+                                                                                alt="raporlayan-image"
+                                                                                class="rounded-circle"></span> Hig</a>
+                                                                    <a href="javascript:void(0);"
+                                                                        class="dropdown-item"><span><img id="raporlayan"
+                                                                                height="16px"
+                                                                                src="assets/images/low.svg"
+                                                                                alt="raporlayan-image"
+                                                                                class="rounded-circle"></span> Low</a>
+                                                                    <a href="javascript:void(0);"
+                                                                        class="dropdown-item"><span><img id="raporlayan"
+                                                                                height="16px"
+                                                                                src="assets/images/lowest.svg"
+                                                                                alt="raporlayan-image"
+                                                                                class="rounded-circle"></span>
+                                                                        Lowest</a>
+                                                                </div>
+                                                            </div>
+
+
+                                                        </ul>
+                                                    </div>
+                                                    <div class="search-box float-right" style="margin-left: 300px;">
+                                                        <input placeholder="Search..."><span
+                                                            class="icon fa fa-search"></span>
+                                                    </div>
+
+                                                    <div class="clearfix"></div>
+
+                                            </header>
+
+                                            <div id="main-nano-wrapper mt-2" class="nano">
+                                                <div class="nano-content">
+                                                    <div class="row">
+                                                        <div class="col-lg-12">
+                                                            <div class="card-box">
+
+                                                                <div class="responsive-table-plugin">
+                                                                    <div class="table-rep-plugin">
+                                                                        <div class="table-responsive"
+                                                                            data-pattern="priority-columns">
+                                                                            <table id="tech-companies-1"
+                                                                                class="table table-striped mb-0 mytable" data-id="mytable">
+                                                                                <thead>
+                                                                                    <tr>
+                                                                                        <th>Tür</th>
+                                                                                        <th>Anahtar</th>
+                                                                                        <th>Özet</th>
+                                                                                        <th>Atanan Kişi</th>
+                                                                                        <th>Raporlayan</th>
+                                                                                        <th>Ö</th>
+                                                                                        <th>Durum</th>
+                                                                                        <th>Çözüm</th>
+                                                                                        <th>Oluşturulma Tarihi</th>
+                                                                                        <th>Güncelleme</th>
+                                                                                        <th>Bitiş Tarihi</th>
+                                                                                    </tr>
+                                                                                </thead>
+                                                                                <tbody >
+                                                                                    <tbody>
+                                                                                    <tr>
+                                                                                        <th scope="row"><img
+                                                                                                height="16px"
+                                                                                                src="assets/images/morsvg.svg">
+                                                                                        </th>
+                                                                                        <td>STKAR-1097</td>
+                                                                                        <td>Envanter İşleme, Nazzım
+                                                                                            Hesapları ve Dönemi Kapatma
+                                                                                            - Lütfen Bekleyiniz Uyarısı
+                                                                                            Hk.</td>
+                                                                                        <td><img height="16px"
+                                                                                                src="assets/images/users/user-1.jpg"
+                                                                                                class="rounded-circle">
+                                                                                            İrfan Koçaksoy</td>
+                                                                                        <td><img height="16px"
+                                                                                                src="assets/images/users/user-1.jpg"
+                                                                                                class="rounded-circle">
+                                                                                            Hüseyin Saygı</td>
+                                                                                        <td><img height="16px"
+                                                                                                src="assets/images/high.svg"
+                                                                                                class="rounded-circle">
+                                                                                        </td>
+                                                                                        <td>
+                                                                                            <select id="myselect">
+                                                                                                <option>DEVAM EDİYOR
+                                                                                                </option>
+                                                                                                <option>INCELENIYOR
+                                                                                                </option>
+                                                                                                <option>TAMAM</option>
+                                                                                            </select>
+                                                                                        </td>
+                                                                                        <td>Çözülmemiş</td>
+                                                                                        <td>24/06/20222</td>
+                                                                                        <td>24/06/20222</td>
+                                                                                        <td>24/06/20222</td>
+
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <th scope="row"><img
+                                                                                                height="16px"
+                                                                                                src="assets/images/morsvg.svg">
+                                                                                        </th>
+                                                                                        <td>STKAR-1097</td>
+                                                                                        <td>Envanter İşleme, Nazzım
+                                                                                            Hesapları ve Dönemi Kapatma
+                                                                                            - Lütfen Bekleyiniz Uyarısı
+                                                                                            Hk.</td>
+                                                                                        <td><img height="20px"
+                                                                                                src="assets/images/users/user-1.jpg"
+                                                                                                class="rounded-circle">
+                                                                                            İrfan Koçaksoy</td>
+                                                                                        <td><img height="20px"
+                                                                                                src="assets/images/users/user-1.jpg"
+                                                                                                class="rounded-circle">
+                                                                                            Hüseyin Saygı</td>
+                                                                                        <td><img height="20px"
+                                                                                                src="assets/images/high.svg"
+                                                                                                class="rounded-circle">
+                                                                                        </td>
+                                                                                        <td>
+                                                                                            <select id="myselect">
+                                                                                                <option>DEVAM EDİYOR
+                                                                                                </option>
+                                                                                                <option>INCELENIYOR
+                                                                                                </option>
+                                                                                                <option>TAMAM</option>
+                                                                                            </select>
+                                                                                        </td>
+                                                                                        <td>Çözülmemiş</td>
+                                                                                        <td>24/06/20222</td>
+                                                                                        <td>24/06/20222</td>
+                                                                                        <td>24/06/20222</td>
+
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <th scope="row"><img
+                                                                                                height="16px"
+                                                                                                src="assets/images/morsvg.svg">
+                                                                                        </th>
+                                                                                        <td>STKAR-1097</td>
+                                                                                        <td>Envanter İşleme, Nazzım
+                                                                                            Hesapları ve Dönemi Kapatma
+                                                                                            - Lütfen Bekleyiniz Uyarısı
+                                                                                            Hk.</td>
+                                                                                        <td><img height="20px"
+                                                                                                src="assets/images/users/user-1.jpg"
+                                                                                                class="rounded-circle">
+                                                                                            İrfan Koçaksoy</td>
+                                                                                        <td><img height="20px"
+                                                                                                src="assets/images/users/user-1.jpg"
+                                                                                                class="rounded-circle">
+                                                                                            Hüseyin Saygı</td>
+                                                                                        <td><img height="20px"
+                                                                                                src="assets/images/high.svg"
+                                                                                                class="rounded-circle">
+                                                                                        </td>
+                                                                                        <td>
+                                                                                            <select id="myselect">
+                                                                                                <option>DEVAM EDİYOR
+                                                                                                </option>
+                                                                                                <option>INCELENIYOR
+                                                                                                </option>
+                                                                                                <option>TAMAM</option>
+                                                                                            </select>
+                                                                                        </td>
+                                                                                        <td>Çözülmemiş</td>
+                                                                                        <td>24/06/20222</td>
+                                                                                        <td>24/06/20222</td>
+                                                                                        <td>24/06/20222</td>
+
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <th scope="row"><img
+                                                                                                height="16px"
+                                                                                                src="assets/images/morsvg.svg">
+                                                                                        </th>
+                                                                                        <td>STKAR-1097</td>
+                                                                                        <td>Envanter İşleme, Nazzım
+                                                                                            Hesapları ve Dönemi Kapatma
+                                                                                            - Lütfen Bekleyiniz Uyarısı
+                                                                                            Hk.</td>
+                                                                                        <td><img height="20px"
+                                                                                                src="assets/images/users/user-1.jpg"
+                                                                                                class="rounded-circle">
+                                                                                            İrfan Koçaksoy</td>
+                                                                                        <td><img height="20px"
+                                                                                                src="assets/images/users/user-1.jpg"
+                                                                                                class="rounded-circle">
+                                                                                            Hüseyin Saygı</td>
+                                                                                        <td><img height="20px"
+                                                                                                src="assets/images/high.svg"
+                                                                                                class="rounded-circle">
+                                                                                        </td>
+                                                                                        <td>
+                                                                                            <select id="myselect">
+                                                                                                <option>DEVAM EDİYOR
+                                                                                                </option>
+                                                                                                <option>INCELENIYOR
+                                                                                                </option>
+                                                                                                <option>TAMAM</option>
+                                                                                            </select>
+                                                                                        </td>
+                                                                                        <td>Çözülmemiş</td>
+                                                                                        <td>24/06/20222</td>
+                                                                                        <td>24/06/20222</td>
+                                                                                        <td>24/06/20222</td>
+
+                                                                                    </tr>
+                                                                                </tbody>
+                                                                            </table>
+                                                                        </div>
+
+                                                                    </div>
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+
+
+                                            </div>
+                                    </div>
+                                    </main>
+                                   
+                                    <div id="message">
+                                        <div class="header">
+                                            <h6 class="page-title"><a
+                                                    class="icon circle-icon mdi mdi-close text-muted trigger-message-close"></a>Konu
+                                                Detayı<span class="grey">(6)</span></h6>
+
+
+
+                                        </div>
+
+
+                                        <div id="message-nano-wrapper" class="nano">
+                                            <div class="nano-content">
+                                                <ul class="message-container list-unstyled">
+                                                    <div class="card ">
+                                                        <div class="card-body">
+
+                                                            <div class="row">
+                                                                <div class="btn-group mt-1 ml-1">
+                                                                    <button type="button"
+                                                                        class="btn btn-secondary dropdown-toggle waves-effect waves-light"
+                                                                        data-toggle="dropdown"
+                                                                        aria-expanded="false">Atanan Kişi<i
+                                                                            class="mdi mdi-chevron-down"></i></button>
+                                                                    <div class="dropdown-menu">
+                                                                        <a href="javascript:void(0);"
+                                                                            class="dropdown-item">İrfan Koçaksoy</a>
+                                                                        <a href="javascript:void(0);"
+                                                                            class="dropdown-item">Hüseyin Saygı</a>
+
+                                                                    </div>
+                                                                </div>
+
+
+                                                                <div class="btn-group mt-1 ml-1 ">
+                                                                    <button type="button"
+                                                                        class="btn btn-secondary dropdown-toggle waves-effect waves-light"
+                                                                        data-toggle="dropdown"
+                                                                        aria-expanded="false">Raporlayan<i
+                                                                            class="mdi mdi-chevron-down"></i></button>
+                                                                    <div class="dropdown-menu">
+                                                                        <a href="javascript:void(0);"
+                                                                            class="dropdown-item">İrfan Koçaksoy</a>
+                                                                        <a href="javascript:void(0);"
+                                                                            class="dropdown-item">Hüseyin Saygı</a>
+
+                                                                    </div>
+                                                                </div>
+
+
+                                                                <div class="btn-group mt-1 ml-1  ">
+                                                                    <button type="button"
+                                                                        class="btn btn-secondary dropdown-toggle waves-effect waves-light"
+                                                                        data-toggle="dropdown"
+                                                                        aria-expanded="false">Öncelik<i
+                                                                            class="mdi mdi-chevron-down"></i></button>
+                                                                    <div class="dropdown-menu">
+                                                                        <a href="javascript:void(0);"
+                                                                            class="dropdown-item"><span><img
+                                                                                    height="16px"
+                                                                                    src="assets/images/medium.svg"
+                                                                                    alt="raporlayan-image"
+                                                                                    class="rounded-circle"></span>
+                                                                            Medium</a>
+                                                                        <a href="javascript:void(0);"
+                                                                            class="dropdown-item"><span><img
+                                                                                    height="16px"
+                                                                                    src="assets/images/highest.svg"
+                                                                                    alt="raporlayan-image"
+                                                                                    class="rounded-circle"></span>
+                                                                            Highest</a>
+                                                                        <a href="javascript:void(0);"
+                                                                            class="dropdown-item"><span><img
+                                                                                    height="16px"
+                                                                                    src="assets/images/high.svg"
+                                                                                    alt="raporlayan-image"
+                                                                                    class="rounded-circle"></span>
+                                                                            Hig</a>
+                                                                        <a href="javascript:void(0);"
+                                                                            class="dropdown-item"><span><img
+                                                                                    height="16px"
+                                                                                    src="assets/images/low.svg"
+                                                                                    alt="raporlayan-image"
+                                                                                    class="rounded-circle"></span>
+                                                                            Low</a>
+                                                                        <a href="javascript:void(0);"
+                                                                            class="dropdown-item"><span><img
+                                                                                    height="16px"
+                                                                                    src="assets/images/lowest.svg"
+                                                                                    alt="raporlayan-image"
+                                                                                    class="rounded-circle"></span>
+                                                                            Lowest</a>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="btn-group mt-1 ml-1 ">
+                                                                   
+                                                                    <button type="button"
+                                                                        class="btn btn-secondary dropdown-toggle waves-effect waves-light"
+                                                                        data-toggle="dropdown"
+                                                                        aria-expanded="false">Etiketler<i
+                                                                            class="mdi mdi-chevron-down"></i></button>
+                                                                    <div class="dropdown-menu">
+                                                                        <a href="javascript:void(0);"
+                                                                            class="dropdown-item">Var</a>
+                                                                        <a href="javascript:void(0);"
+                                                                            class="dropdown-item">Yok</a>
+
+                                                                    </div>
+                                                                </div>
+                                                                <div class="btn-group mt-1 ml-1  ">
+                                                                    <button type="button"
+                                                                        class="btn btn-secondary dropdown-toggle waves-effect waves-light"
+                                                                        data-toggle="dropdown"
+                                                                        aria-expanded="false">Bileşenler<i
+                                                                            class="mdi mdi-chevron-down"></i></button>
+                                                                    <div class="dropdown-menu">
+                                                                        <a href="javascript:void(0);"
+                                                                            class="dropdown-item">Kiler-İç Dağıtım</a>
+                                                                        <a href="javascript:void(0);"
+                                                                            class="dropdown-item">Üretim-Maliyet
+                                                                            Cetveli</a>
+
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <li class="sent">
+                                                            <div class="details">
+                                                                <div class="left">Atanan
+                                                                    <div class="arrow"></div>
+                                                                    Gönderen
+                                                                </div>
+                                                                <div class="right">22/06/2022</div>
+                                                            </div>
+                                                            <div class="mb-1"><strong>Açıklama</strong></div>
+                                                            <div class="message">
+                                                                <p>| Yemek dağıtım fişleri ile ilgili konu</p>
+                                                                <p>| Yemek dağıtım fişleri...</p>
+
+                                                            </div>
+
+                                                        </li>
+                                                        <div class="card1">
+                                                            <div class="card1-body">
+                                                                <!-- <label class="mb-2" for="summernote">Etkinlik</label>  -->
+                                                                <div class="text-center mb-1">
+                                                                    <a href="#yorumlar" type="button" class="btn btn-secondary  mb-1 mt-1"style="height: 35px; width: 195px;" >Yorumlar</a> 
+                                                                    <button style="height: 35px; width: 195px;"type="button"
+                                                                        class="btn btn-secondary waves-effect waves-light mb-1 mt-1"
+                                                                        data-toggle="modal"
+                                                                        data-target="#exampleModal">Geçmiş</button>
+                                                                </div>
+                                                                
+                                                                <form role="form">
+                                                                    <div class="row">
+                                                                        <!-- <div class="col-1">
+                                                                            <div class="subject mt-5"><span><img
+                                                                                        id="raporlayan" height="24px"
+                                                                                        src="assets/images/users/user-1.jpg"
+                                                                                        alt="raporlayan-image"
+                                                                                        class="rounded-circle"></span>
+                                                                            </div>
+                                                                        </div> -->
+                                                                        <div class="col-12">
+                                                                            <div class="form-group">
+
+                                                                                <div id="summernote" class="summernote">
+                                                                                    <h6>Hello Summernote</h6>
+                                                                                </div>
+                                                                                <div class="form-group">
+                                                                                    <input type="submit"
+                                                                                        class="btn btn-sm btn-success">
+                                                                                    <button
+                                                                                        class="btn btn-sm btn-danger">İptal</button>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </form>
+
+
+                                                            </div>
+                                                        </div>
+
+
+                                                        <div class="card1 mt-1">
+                                                            <div class="card1-body">
+                                                                <div class="row">
+                                                                    <div class="col-1" id="yorumlar">
+                                                                        <div class=" mt-1"><span><img id="raporlayan"
+                                                                                    height="24px"
+                                                                                    src="assets/images/users/user-1.jpg"
+                                                                                    alt="raporlayan-image"
+                                                                                    class="rounded-circle"></span></div>
+                                                                    </div>
+                                                                    <div class="col-11">
+                                                                        <div class="mt-1"><strong>İrfan
+                                                                                Koçaksoy</strong><span class="ml-3"> 10
+                                                                                saat önce</span></div>
+                                                                        <p class="card-text ml-1">Düzeltildi</p>
+                                                                        <a href="#" class="text-white"
+                                                                            type="button">Düzenle</a>
+                                                                        <sup><strong>.</strong></sup>
+                                                                        <a href="#" class="text-white"
+                                                                            type="button">Sil</a>
+                                                                    </div>
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+                                                        <div class="card1 mt-1">
+                                                            <div class="card1-body">
+                                                                <div class="row">
+                                                                    <div class="col-1">
+                                                                        <div class=" mt-1"><span><img id="raporlayan"
+                                                                                    height="24px"
+                                                                                    src="assets/images/users/user-1.jpg"
+                                                                                    alt="raporlayan-image"
+                                                                                    class="rounded-circle"></span></div>
+                                                                    </div>
+                                                                    <div class="col-11">
+                                                                        <div class="mt-1"><strong>İrfan
+                                                                                Koçaksoy</strong><span class="ml-3"> 10
+                                                                                saat önce</span></div>
+                                                                        <p class="card-text ml-1">Düzeltildi</p>
+                                                                        <a href="#" class="text-white"
+                                                                            type="button">Düzenle</a>
+                                                                        <sup><strong>.</strong></sup>
+                                                                        <a href="#" class="text-white"
+                                                                            type="button">Sil</a>
+                                                                    </div>
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> <!-- end col -->
+                            </div><!-- end row -->
+                        </div>
+
+                    </div>
+
+                </div>
+                <!-- End row -->
+
+
+            </div> <!-- container-fluid -->
+
+        </div> <!-- content -->
+
+
+
+    </div>
+
+    <!-- ============================================================== -->
+    <!-- End Page content custom-modal-->
+    <!-- ============================================================== -->
+
+
+    </div>
+    <!-- END wrapper -->
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModalScrollable" tabindex="-1" role="dialog"
+        aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalScrollableTitle">Konu Oluşturun</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="card-box mb-0">
+                        <form role="form">
+                            <div class="form-group">
+                                <div class="mb-2"><button type="button" class="btn btn-warning btn-sm "><a
+                                            class="text-white"
+                                            href="https://sosyaltesis.atlassian.net/secure/BulkCreateSetupPage!default.jspa?externalSystem=com.atlassian.jira.plugins.jim-plugin%3AbulkCreateCsv">Konuları
+                                            içe aktar</a> </button></div>
+                                <label for="projeselect"> Proje*</label>
+                                <select id="projeselect" class="form-control form-select form-select-sm "
+                                    aria-label="Default select example">
+                                    <option value="" selected>Proje Seçin</option>
+                                    <option value="">1</option>
+                                    <option value="">2</option>
+                                </select>
+
+                            </div>
+                            <div class="form-group">
+                                <label for="konutürü"> Konu Türü*</label>
+                                <select id="konutürü" class="form-control form-select form-select-sm"
+                                    aria-label="Default select example">
+                                    <option value="" selected>Hata</option>
+                                    <option value="">İyileştirme</option>
+                                    <option value="">Görev</option>
+                                    <option value="">Yeni Özellik</option>
+
+                                </select>
+
+                            </div>
+                            <hr>
+
+                            <div class="form-group">
+                                <label for="özet"> Özet*</label>
+                                <input id="özet" type="text" class="form-control" placeholder="">
+                            </div>
+                            <div class="form-group">
+                                <label for="projeselect">Bileşenler*</label>
+                                <select class="form-control form-select form-select-sm"
+                                    aria-label="Default select example">
+                                    <option value="">Kamp Yönetim Ekranı</option>
+                                    <option value="">Üretim-Maliyet Cetveli</option>
+                                    <option value="">Üretim-Yemek Dağıtım Fişi</option>
+                                    <option value="">Muhasebe-Üretim Sayım Cetveli</option>
+
+                                </select>
+
+                            </div>
+
+                            <div class="form-group">
+                                <label for="summernote">Açıklama</label>
+                                <div id="summernote" class="summernote">
+                                    <h6>Hello Summernote</h6>
+                                    <ul>
+                                        <li>
+                                            Select a text to reveal the toolbar.
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="raporlayan">Raporlayan*</label>
+                                <div id="raporlayan" class="form-control">Login Kullanıcı</div>
+                            </div>
+                            <div class="form-group">
+                                <label for="sürümdüzeltme">Düzeltme Sürümleri</label>
+                                <select id="sürümdüzeltme" class="form-control form-select form-select-sm"
+                                    aria-label="Default select example">
+                                    <option value="">21062022</option>
+                                    <option value="">20062022</option>
+                                    <option value="">19062022</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="öncelik">Öncelik</label>
+                                <select id="öncelik" class="form-control form-select form-select-sm"
+                                    aria-label="Default select example">
+                                    <option value="" selected>Medium</option>
+                                    <option value="">Highest</option>
+                                    <option value="">Hig</option>
+                                    <option value="">Low</option>
+                                    <option value="">Lowest</option>
+                                </select>
+                                <a class="mt-2"
+                                    href="https://sosyaltesis.atlassian.net/secure/ShowConstantsHelp.jspa?decorator=popup#PriorityLevels">Daha
+                                    fazla bilgi</a>
+                            </div>
+                            <div class="form-group">
+                                <label for="etiketler">Etiketler</label>
+                                <select id="etiketler" class="form-control form-select form-select-sm"
+                                    aria-label="Default select example">
+                                    <option value="" selected>Etiket Seçin</option>
+                                    <option value="">Eksik Talep</option>
+                                    <option value="">Hasılat</option>
+                                    <option value="">Important</option>
+                                    <option value="">KantinEkstra</option>
+                                </select>
+
+                            </div>
+
+                            <div class="form-group">
+                                <label for="tahmin">Orjinal Tahin</label>
+                                <input type="text" id="tahmin" class="form-control" placeholder="2w 1d 5h 4m">
+                                <p>An estimate of how much work remains until this issue will be resolved.<br>The format
+                                    of this is ' *w *d *h *m ' (representing weeks, days, hours and minutes - where *
+                                    can be any number)<br>Examples: 4d, 5h 30m, 60m and 3w.<br></p>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="ortam">Ortam</label>
+                                <div id="ortam" class="summernote">
+                                    <h6>Pro tip: Type/to add tables, images, code blocks, and more</h6>
+
+                                </div>
+                                <p>For example operating system, software platform and/or hardware specifications
+                                    (include as appropriate for the issue).</p>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="ekupload">Ek</label>
+                                <div class="input-group mb-3">
+                                    <input type="file" id="ekupload" class="form-control">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="etkilenensürüm">Etkilenen Sürümler</label>
+                                <select id="etkilenensürüm" class="form-control form-select form-select-sm"
+                                    aria-label="Default select example">
+                                    <option value="">21062022</option>
+                                    <option value=""> 20062022</option>
+                                    <option value="">19062022</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="bitistarih">Tarih Seçin</label>
+                                <input id="bitistarih" class="form-control" type="date">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="baglıkonu">Bağlanan Konular</label>
+                                <select id="baglıkonu" class="form-control form-select form-select-sm"
+                                    aria-label="Default select example">
+                                    <option value="" selected>blocks</option>
+                                    <option value=""> is blocked by</option>
+                                    <option value="">clones</option>
+                                    <option value="">is cloned by</option>
+                                    <option value="">duplicates</option>
+                                    <option value="">is duplicated by</option>
+                                    <option value="">rales yo</option>
+                                </select>
+
+                                <select id="baglıkonusec" class="form-control form-select form-select-sm mt-2 "
+                                    aria-label="Default select example">
+                                    <option value="" selected>Konu Seç</option>
+                                    <option value=""> 1</option>
+                                    <option value="">2</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group ">
+                                <label for="atanankisi">Atanan Kişi</label>
+                                <select id="atanankisi" class="form-control">
+                                    <option selected>Otomatik</option>
+                                    <option value="1">Kişi 1</option>
+                                    <option value="2">Kişi 2</option>
+                                    <option value="3">Kişi 3</option>
+                                </select>
+                                <button type="button" class="btn btn-link"><span>Bana Ata</span></button>
+                            </div>
+
+                            <div class="form-group ">
+                                <label for="epiclink">Epic Link</label>
+
+                                <select id="epiclink" class="form-control">
+                                    <option selected>Epik Seçin</option>
+                                    <option value="1">Artan Veri Tabanı Boyut Önlemi</option>
+                                    <option value="2">FİFO</option>
+                                </select>
+                                <p>Choose an epic to assign this issue to.</p>
+                            </div>
+                            <div class="form-group mb-3">
+                                <div class="form-control">
+                                    <input id="yeikonu" class="form-check-input mt-0" type="checkbox">
+                                    <label for="yeikonu">Yeni konu oluştur</label>
+                                </div>
+                            </div>
+
+
+                            <div class="btn-toolbar form-group mb-0">
+                                <div class="float-right">
+                                    <button type="button"
+                                        class="btn btn-danger waves-effect waves-light  mr-1"><span>İptal </span><i
+                                            class="far fa-trash-alt"></i></button>
+                                    <button class="btn btn-success waves-effect waves-light"><span>Oluştur</span> <i
+                                            class="fas fa-paper-plane ml-1"></i></button>
+                                </div>
+                            </div>
+
+                        </form>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- yeni modal-->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
+    aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="exampleModalScrollableTitle"><strong>Geçmiş</strong></h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                
+                <div>
+                    <div>
+                        <img height="24px"  class="rounded-circle mr-1"src="assets/images/users/user-1.jpg">
+                         <strong id="gecis_user">İrfan Koçaksoy</strong><span class="ml-1">Parent</span> adlı alanı güncelledi <span>3 saat önce</span>
+                    </div>
+                    
+                    <p class="mt-1 ml-4 " id="gecmis_detay"><i>Yok</i> <i  class="mdi mdi-arrow-right ml-2"></i> <span class="ml-2" id="gecmis_proje"><strong>STKAR-1079</strong></span></p>
+                </div>
+                <div>
+                    <div>
+                        <img height="24px"  class="rounded-circle mr-1"src="assets/images/users/user-1.jpg">
+                         <strong id="gecis_user">İrfan Koçaksoy</strong><span class="ml-1">Modal</span> adlı alanı güncelledi <span>3 saat önce</span>
+                    </div>
+                    
+                    <p class="mt-1 ml-4 " id="gecmis_detay"><i>Yok</i> <i  class="mdi mdi-arrow-right ml-2"></i> <span class="ml-2" id="gecmis_proje"><strong>STKAR-1079</strong></span></p>
+                </div>
+                <div>
+                    <div>
+                        <img height="24px"  class="rounded-circle mr-1"src="assets/images/users/user-1.jpg">
+                         <strong id="gecis_user">İrfan Koçaksoy</strong><span class="ml-1">Yorumlar</span> adlı alanı güncelledi <span>3 saat önce</span>
+                    </div>
+                    
+                    <p class="mt-1 ml-4 " id="gecmis_detay"><i>Yok</i> <i  class="mdi mdi-arrow-right ml-2"></i><span class="ml-2" id="gecmis_proje"><strong>STKAR-1079</strong></span></p>
+                </div>
+                
+                
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+               
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--proje oluştur modal-->
+<div id="projeolustur" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="projeolustur">Proje Oluştur</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+            </div>
+            <div class="modal-body">
+                <h4>Proje bilgilerini ekleyin</h4>
+                <p>Bu ayrıntıları dilediğiniz zaman proje ayarlarınızdan değiştirebilirsiniz</p>
+                <hr>
+                
+                <div class="card-box mb-0">
+                    <form role="form">
+                        <div class="form-group">
+                            <label for="özet">Ad </label>
+                            <input id="özet" type="text" class="form-control" placeholder="Takım adı, proje hedefi, kilometre taşı irmeyi deneyin">
+                        </div> 
+                        <div class="form-group">
+                            <label for="özet">Anahtar </label>
+                            <input id="özet" type="text" class="form-control">
+                        </div>
+                        <div class="form-group mb-3">
+                            <div class="form-control">
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" id="customCheck1">
+                                    <label class="form-check-label" for="customCheck1">Ayarları var olan bir  projeyle paylaş</label>
+                                </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary waves-effect" data-dismiss="modal">İptal</button>
+                <button type="button" class="btn btn-primary waves-effect waves-light">Proje Oluştur</button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+<!--proje oluştur modal end-->
+    <!--burada2-->
+    <!-- Right Sidebar -->
+    <div class="right-bar">
+        <div class="rightbar-title">
+            <a href="javascript:void(0);" class="right-bar-toggle float-right">
+                <i class="dripicons-cross noti-icon"></i>
+            </a>
+            <span class="logo-lg">
+                <img src="assets/images/logo-light.png" alt="" height="60">
+                <span class="logo-lg-text-light"></span>
+            </span>
+        </div>
+        <div class="slimscroll-menu">
+
+            <!-- Menü-->
+
+            <div class="user-box text-center">
+
+                <div class="dropdown">
+                    <a href="#" class="text-dark dropdown-toggle h5 mt-2 mb-1 d-block" data-toggle="dropdown">AFAC
+                        Yazılım Proje Adı</a>
+                    <div class="dropdown-menu user-pro-dropdown">
+
+                        <!-- item-->
+                        <a href="javascript:void(0);" class="dropdown-item notify-item">
+                            <i class="fe-user mr-1"></i>
+                            <span>My Account</span>
+                        </a>
+
+                        <!-- item-->
+                        <a href="javascript:void(0);" class="dropdown-item notify-item">
+                            <i class="fe-settings mr-1"></i>
+                            <span>Settings</span>
+                        </a>
+
+                        <!-- item-->
+                        <a href="javascript:void(0);" class="dropdown-item notify-item">
+                            <i class="fe-lock mr-1"></i>
+                            <span>Lock Screen</span>
+                        </a>
+
+                        <!-- item-->
+                        <a href="javascript:void(0);" class="dropdown-item notify-item">
+                            <i class="fe-log-out mr-1"></i>
+                            <span>Logout</span>
+                        </a>
+
+                    </div>
+                </div>
+                <p class="text-muted">Yazılım Projesi</p>
+                <ul class="list-inline">
+                    <li class="list-inline-item">
+                        <a href="#" class="text-muted">
+                            <i class="mdi mdi-settings"></i>
+                        </a>
+                    </li>
+
+                    <li class="list-inline-item">
+                        <a href="#" class="text-custom">
+                            <i class="mdi mdi-power"></i>
+                        </a>
+                    </li>
+                    <button class="js-theme-switch" type="button" aria-label="Theme Switch Button">
+                        <span class="main-nav__item-icon">🌓</span><span class="text"></span>
+                        </button>
+                </ul>
+            </div>
+            <!--burada sabit-->
+            <!--- Sidemenu -->
+            <div id="sidebar-menu">
+
+                <ul class="metismenu" id="side-menu">
+                    <li>
+                        <a href="index.html">
+                            <i class="mdi mdi-view-dashboard"></i>
+                            <span> Projeye Geri Dön </span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="javascript: void(0);">
+                            <!-- <i class="mdi mdi-invert-colors"></i> -->
+                            <span> PLANLAMA </span>
+                            <span class="menu-arrow"></span>
+                        </a>
+                        <ul class="nav-second-level" aria-expanded="false">
+                            <li><a href="ui-buttons.html">Pano</a></li>
+                            <li><a href="ui-buttons.html">Raporlor</a></li>
+                            <li><a href="ui-cards.html">Konular</a></li>
+                            <li><a href="ui-draggable-cards.html">Bileşenler</a></li>
+
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="javascript: void(0);">
+                            <!-- <i class="mdi mdi-texture"></i> -->
+                            <span class="badge badge-warning float-right"></span>
+                            <span> GELİŞTİRME </span>
+                        </a>
+                        <ul class="nav-second-level" aria-expanded="false">
+                            <li><a href="form-elements.html">Kod</a></li>
+                            <li><a href="form-advanced.html">Sürümler</a></li>
+
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="calendar.html">
+                            <!-- <i class="mdi mdi-calendar"></i> -->
+                            <span> Proje Sayfaları </span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="inbox.html">
+                            <!-- <i class="mdi mdi-email"></i> -->
+                            <span> Kısayol Ekleyin </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="inbox.html">
+                            <!-- <i class="mdi mdi-email"></i> -->
+                            <span> Proje Ayarları </span>
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+            <!-- End Sidebar -->
+
+            <div class="clearfix"></div>
+
+            <!-- Sidebar -left -->
+
+
+            <!-- Left Sidebar End -->
+        </div> <!-- end slimscroll-menu-->
+    </div>
+    <!-- /Right-bar -->
+
+    <!-- Right bar overlay-->
+    <div class="rightbar-overlay"></div>
+ 
+  
+
+    <!-- Vendor js -->
+    <script src="assets/js/vendor.min.js"></script>
+
+    <!--summernote init-->
+    <script src="assets/libs/summernote/summernote-bs4.min.js"></script>
+
+    <!-- Modal-Effect -->
+    <script src="assets/libs/custombox/custombox.min.js"></script>
+
+
+    <script src="assets/js/pages/inbox.init.js"></script>
+
+    <!-- App js -->
+    <script src="assets/js/app.min.js"></script>
+
+
+</body>
+
+</html>
+
+<!-- <div class="row">
+                                                                    <div class="col-4">
+                                                                       <div  id="atanan_detay" >Atanan Kişi</div>
+                                                                       <div id="raporlayan_detay" class="mt-2">Raporlayan</div>
+                                                                       <div id="etiketler_detay" class="mt-2">Etiketler</div>
+                                                                    </div>
+                                                                    <div class="col-8">
+                                                                        <div class="row">
+                                                                            <div class="col-1"><img id="atanan_image"height="20px" src="assets/images/users/user-1.jpg" alt="atanan-image" class="rounded-circle"></div>
+                                                                            <div id="atanan_image" class="col-7"><strong>İrfan Koçaksoy</strong></div>
+                                                                            <a href="#" class="text-white" type="button">Bana ata</a>
+                                                                        </div>
+                                                                        <div class="row mt-2">
+                                                                            <div class="col-1"><img id="raporlayan_image"height="20px" src="assets/images/users/user-1.jpg" alt="atanan-image" class="rounded-circle"></div>
+                                                                            <div id="raporlayan_image" class="col-7"><strong>Hüseyin Saygı</strong></div>
+                                                                            <a href="#" class="text-white" type="button">Bana ata</a>
+                                                                        </div>
+                                                                        <div class="row mt-2">
+                                                                            <div id="etiketler_val" class="col-7"><strong>Yok</strong></div>
+                                                                           
+                                                                        </div>
+                                                                       
+                                                                        
+                                                                    </div>
+                                                                </div> -->
