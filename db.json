@@ -1,0 +1,59 @@
+{
+  "user": {
+    "username": "irfan",
+    "lastname": "koçaksoy",
+    "users": "Hüseyin Saygı"
+  },
+  "projects": [
+    {
+      "id": "1",
+      "project_name": "stk-port"
+    },
+    {
+      "id": "2",
+      "project_name": "stk-port2"
+    },
+    {
+      "id": "3",
+      "project_name": "STKARIZATALEP"
+    }
+  ],
+  "key": {
+    "anahtar": "STKAR-1098"
+  },
+  "abstract": {
+    "ozet": "Envanter işleme"
+  },
+  "atama": {
+    "atanan_user": "irfan",
+    "raporlayan_user": "Hüseyin"
+  },
+  "date": {
+    "cerate_date": "26/06/20220",
+    "update_date": "26/06/2022",
+    "end_date": "26/06/2022"
+  },
+  "konu": {
+    "konu_tur": "görev",
+    "konular": "1"
+  },
+  "bilesen": {
+    "bilesenler": "Üretim-Maliyet Cetveli"
+  },
+  "version": {
+    "versions": "26062022",
+    "edit_version": "26062022"
+  },
+  "tags": {
+    "etiket": "Hasılat"
+  },
+  "bloc": {
+    "blocks": "clones"
+  },
+  "epics": {
+    "epic": "FİFO"
+  },
+  "details": {
+    "detay": "yemke dağıtım"
+  }
+}
