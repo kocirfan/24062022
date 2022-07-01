@@ -1,0 +1,1093 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>AFAC</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="A fully featured admin theme which can be used to build CRM, CMS, etc." name="description" />
+    <meta content="Coderthemes" name="author" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- App favicon -->
+    <link rel="shortcut icon" href="assets/images/favicon.ico">
+
+    <!-- summernote css -->
+    <link href="assets/libs/summernote/summernote-bs4.css" rel="stylesheet" />
+
+    <!-- Custom box css -->
+    <link href="assets/libs/custombox/custombox.min.css" rel="stylesheet">
+
+    <!-- App css -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/app.min.css" rel="stylesheet" type="text/css" />
+    <!-- <style>
+        #deneme{
+            
+            font-size: small;
+        }
+    </style> -->
+
+</head>
+
+<body>
+
+    <!-- Begin page -->
+    <div id="wrapper">
+
+        <!-- Topbar Start -->
+        <div class="navbar-custom">
+            <!-- <span class="logo-lg">
+                <img class="ml-3 mt-1" src="assets/images/logo-light.png" alt="" height="55" width="150">
+                <span class="logo-lg-text-light"></span>
+            </span> -->
+            <ul class="list-unstyled topnav-menu float-right mb-0">
+                 <!--buradayım-->
+                <li class="dropdown notification-list">
+                    <a class="nav-link dropdown-toggle waves-effect ml-2" data-toggle="dropdown" href="#" role="button"
+                        aria-haspopup="false" aria-expanded="false">
+
+                        Çalışmalarımız<i class="mdi mdi-chevron-down"></i>
+                    </a>
+
+                    <div class="dropdown-menu dropdown-menu-right dropdown-lg">
+
+                        <!-- item-->
+                        <div class="dropdown-item noti-title">
+                           <h6>Çalışmlarınız sayfası</h6>
+                        </div>
+                        <div class="slimscroll noti-scroll">
+                            <a href="javascript:void(0);" class="dropdown-item notify-item active">
+                                <div class="notify-icon">
+                                    <img src="assets/images/users/user-1.jpg" class="img-fluid rounded-circle" alt="" />
+                                </div>
+                                <p class="notify-details">Bana Atananlar</p>
+                                <p class="text-muted mb-0 user-msg">
+                                    <small>Size Atanmış bir çalışma yok</small>
+                                </p>
+                            </a>
+                            <a href="jirakonular.html" class="dropdown-item notify-item">
+                                <div class="notify-icon bg-primary"></div>
+                                <p class="notify-details"> En Son</p>
+                            </a>
+                            <a href="jirakonular.html" class="dropdown-item notify-item">
+                                <div class="notify-icon bg-primary"></div>
+                                <p class="notify-details"> Panolar
+                                </p>
+                            </a>
+                        </div>
+
+                        <!-- All-->
+                        <a href="javascript:void(0);"
+                            class="dropdown-item text-center text-primary notify-item notify-all">
+                            View all
+                            <i class="fi-arrow-right"></i>
+                        </a>
+
+                    </div>
+                </li>
+                <li class="dropdown notification-list">
+                    <a class="nav-link dropdown-toggle waves-effect" data-toggle="dropdown" href="#" role="button"
+                        aria-haspopup="false" aria-expanded="false">
+
+                        Projeler<i class="mdi mdi-chevron-down"></i>
+                    </a>
+
+                    <div class="dropdown-menu dropdown-menu-right dropdown-lg">
+
+                        <!-- item-->
+                        <div class="dropdown-item noti-title">
+                            <h5 class="m-0"> EN SON</h5>
+                        </div>  
+                       <div class="slimscroll noti-scroll">
+                            <!-- item-->
+                            <ul class="list-group">
+                                <li class="list-group-item" id="project_name">
+                                    <a href="jirakonular.html" class="dropdown-item notify-item">
+                                        <div  class="notify-icon bg-primary"></div>
+                                        <p  class="notify-details">STKARIZATALEP(STKAR)</p>
+                                    </a>
+                                </li>
+                            </ul>
+                            
+                            <a href="jirakonular.html" class="dropdown-item notify-item">
+                                <div class="notify-icon bg-primary"></div>
+                                <p class="notify-details"> stk-port(SP)
+                                </p>
+                            </a>
+                        </div>
+                        <!-- All-->
+                        <a href="javascript:void(0);"
+                            class="dropdown-item text-center text-primary notify-item notify-all">
+                            Tüm projeleri görüntüleyin
+                            <i class="fi-arrow-right"></i>
+                        </a>
+                        <a href="createproje.html;"
+                        class="dropdown-item text-center text-primary notify-item notify-all">
+                        Proje Oluştur
+                        <i class="fi-arrow-right"></i>
+                    </a>
+                        
+                        
+                    </div>
+                </li>
+
+                <li class="dropdown notification-list">
+                    <a class="nav-link dropdown-toggle waves-effect" data-toggle="dropdown" href="#" role="button"
+                        aria-haspopup="false" aria-expanded="false">
+
+                        Filtreler<i class="mdi mdi-chevron-down"></i>
+                    </a>
+
+                    <div class="dropdown-menu dropdown-menu-right dropdown-lg">
+
+                        <!-- item-->
+                        <div class="dropdown-item noti-title">
+                            <h5 class="m-0"> EN SON</h5>
+                        </div>
+
+                        <div class="slimscroll noti-scroll">
+
+                            <!-- item-->
+                            <a href="javascript:void(0);" class="dropdown-item notify-item active">
+                                <div class="notify-icon">
+                                    <i class="mdi mdi-filter-variant"></i>
+                                </div>
+                                <p class="notify-details">Açık Konular</p>
+                            </a>
+                            <a href="javascript:void(0);" class="dropdown-item notify-item active">
+                                <div class="notify-icon">
+                                    <i class="mdi mdi-filter-variant"></i>
+                                </div>
+                                <p class="notify-details">Tamamlanan konular</p>
+                            </a>
+                            <a href="javascript:void(0);" class="dropdown-item notify-item active">
+                                <div class="notify-icon">
+                                    <i class="mdi mdi-filter-variant"></i>
+                                </div>
+                                <p class="notify-details">Yakın zamanda oluşturulanlar</p>
+                            </a>
+                        </div>
+
+                        <!-- All-->
+                        <a href="jirakonular.html"
+                            class="dropdown-item text-center text-primary notify-item notify-all">
+                            Gelişmiş konu araması
+                            <i class="fi-arrow-right"></i>
+                        </a>
+
+                    </div>
+                </li>
+
+              
+                <li class="dropdown notification-list">
+                    <a class="nav-link dropdown-toggle waves-effect" data-toggle="dropdown" href="#" role="button"
+                        aria-haspopup="false" aria-expanded="false">
+
+                        Kişiler<i class="mdi mdi-chevron-down"></i>
+                    </a>
+
+                    <div class="dropdown-menu dropdown-menu-right dropdown-lg">
+
+                        <!-- item-->
+                        <div class="dropdown-item noti-title">
+                            <h5 class="m-0"> Takım Arkadaşlarınız</h5>
+                        </div>
+
+                        <div class="slimscroll noti-scroll">
+
+                            <!-- item-->
+                            <a href="javascript:void(0);" class="dropdown-item notify-item active">
+                                <div class="notify-icon">
+                                    <img height="24px" src="assets/images/users/user-1.jpg" class="rounded-circle">
+                                </div>
+                                <p id="users"class="notify-details">İrfan Koçaksoy</p>
+                            </a>
+                            <a href="javascript:void(0);" class="dropdown-item notify-item active">
+                                <div class="notify-icon">
+                                    <img height="24px" src="assets/images/users/user-1.jpg" class="rounded-circle">
+                                </div>
+                                <p class="notify-details">Hüseyin Saygı</p>
+                            </a>
+                            <a data-toggle="modal"
+                            data-target="#takimarkadasi"  class="dropdown-item notify-item active">
+                                <div class="notify-icon">
+                                    <i class="mdi mdi-plus"></i>
+                                </div>
+                                <p class="notify-details">Bir takım arkadaşı davet et</p>
+                            </a>
+                            <a href="javascript:void(0);" class="dropdown-item notify-item active">
+                                <div class="notify-icon">
+                                    <i class="mdi mdi-plus"></i>
+                                </div>
+                                <p class="notify-details">Bir takım oluştur</p>
+                            </a>
+                           
+                        </div>
+
+                        <!-- All-->
+                        <a href="jirakonular.html"
+                            class="dropdown-item text-center text-primary notify-item notify-all">
+                           
+                           Kişi veya takım arayın
+                        </a>
+
+                    </div>
+                </li>
+           
+                <li class="d-none d-sm-block ml-5">
+                    <form class="app-search">
+                        <div class="app-search-box">
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="Search...">
+                                <div class="input-group-append">
+                                    <button class="btn" type="submit">
+                                        <i class="fe-search"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </li>
+ <!--bildirim-->
+ <li  class="dropdown notification-list">
+    <a class="nav-link dropdown-toggle waves-effect" data-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
+        <i class="fe-bell noti-icon"></i>
+        <span class="badge badge-danger rounded-circle noti-icon-badge">9</span>
+    </a>
+    <div style="width: 450px;" class="dropdown-menu dropdown-menu-right dropdown-lg">
+
+        <!-- item-->
+        <div class="dropdown-item noti-title">
+            <h5 class="m-0">
+                <span class="float-right">
+                    <a href="" class="text-dark">
+                        <small>Clear All</small>
+                    </a>
+                </span>Bildirimler
+            </h5>
+            <br>
+            <span ><a class="text-white" href="#">Doğrudan</a> / <a class="text-white"  href="#">Takip edilen</a></span>
+        </div>
+            
+        <div class="slimscroll noti-scroll">
+
+            <!-- item-->
+            <a   href="detay.html" class="dropdown-item notify-item active">
+                <div class="notify-icon">
+                    <img src="assets/images/users/user-1.jpg" class="img-fluid rounded-circle" alt="" /> </div>
+                <p class="notify-details"><b>Hüseyin Saygı</b> reacted to your comment</p>
+                <p><img id="" src="assets/images/kırmızısvg.svg" alt=""><small class="text-white" id="ozet"> El Terminali Depo Giriş (KA)</small>
+                    <small class="ml-3 text-white" id="anahtar">STKAR-1048</small>
+                </p>
+               
+                <p class="text-muted mb-0 user-msg">
+                  Düzeltildi Düzeltildi Düzeltildi 
+                </p>
+
+            </a>
+               <!-- item-->
+               <a   href="detay.html" class="dropdown-item notify-item active">
+                   <div class="notify-icon">
+                       <img src="assets/images/users/user-1.jpg" class="img-fluid rounded-circle" alt="" /> </div>
+                   <p class="notify-details"><b>Hüseyin Saygı</b> reacted to your comment</p>
+                   <p><img id="" src="assets/images/kırmızısvg.svg" alt=""><small class="text-white" id="ozet"> El Terminali Depo Giriş (KA)</small>
+                       <small class="ml-3 text-white" id="anahtar">STKAR-1048</small>
+                   </p>
+                  
+                   <p class="text-muted mb-0 user-msg">
+                     Düzeltildi Düzeltildi Düzeltildi 
+                   </p>
+
+               </a>
+
+                  <!-- item-->
+            <a   href="detay.html" class="dropdown-item notify-item active">
+                <div class="notify-icon">
+                    <img src="assets/images/users/user-1.jpg" class="img-fluid rounded-circle" alt="" /> </div>
+                <p class="notify-details"><b>Hüseyin Saygı</b> reacted to your comment</p>
+                <p><img id="" src="assets/images/kırmızısvg.svg" alt=""><small class="text-white" id="ozet"> El Terminali Depo Giriş (KA)</small>
+                    <small class="ml-3 text-white" id="anahtar">STKAR-1048</small>
+                </p>
+               
+                <p class="text-muted mb-0 user-msg">
+                  Düzeltildi Düzeltildi Düzeltildi 
+                </p>
+
+            </a>
+
+
+        </div>
+
+        <!-- All-->
+        <a href="javascript:void(0);" class="dropdown-item text-center text-primary notify-item notify-all">
+            View all
+            <i class="fi-arrow-right"></i>
+        </a>
+
+    </div>
+</li>
+ <!--bildirim-->
+                <li class="dropdown notification-list">
+                    <a class="nav-link dropdown-toggle nav-user mr-0 waves-effect" data-toggle="dropdown" href="#"
+                        role="button" aria-haspopup="false" aria-expanded="false">
+                        <img src="assets/images/users/user-1.jpg" alt="user-image" class="rounded-circle">
+                        <span class="pro-user-name ml-1">
+                            <span id="username">İrfan</span> <span id="lastname">Koçaksoy</span>  <i class="mdi mdi-chevron-down"></i>
+                        </span>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right profile-dropdown ">
+                        <!-- item-->
+                        <div class="dropdown-header noti-title">
+                            <h6 class="text-overflow m-0">Welcome !</h6>
+                        </div>
+
+                        <!-- item-->
+                        <a href="javascript:void(0);" class="dropdown-item notify-item">
+                            <i class="fe-user"></i>
+                            <span>My Account</span>
+                        </a>
+
+                        <!-- item-->
+                        <a href="javascript:void(0);" class="dropdown-item notify-item">
+                            <i class="fe-settings"></i>
+                            <span>Settings</span>
+                        </a>
+
+                        <!-- item-->
+                        <a href="javascript:void(0);" class="dropdown-item notify-item">
+                            <i class="fe-lock"></i>
+                            <span>Lock Screen</span>
+                        </a>
+
+                        <div class="dropdown-divider"></div>
+
+                        <!-- item-->
+                        <a href="javascript:void(0);" class="dropdown-item notify-item">
+                            <i class="fe-log-out"></i>
+                            <span>Logout</span>
+                        </a>
+
+                    </div>
+                </li>
+
+                <li class="dropdown notification-list">
+                    <a href="javascript:void(0);" class="nav-link right-bar-toggle waves-effect">
+                        <i class="fe-settings noti-icon"></i>
+                    </a>
+                </li>
+                <!--burada-->
+
+            </ul>
+
+            <!-- LOGO -->
+
+            <!-- <ul class="list-unstyled topnav-menu topnav-menu-left m-0">
+               
+                <li class="dropdown notification-list">
+                    <a href="javascript:void(0);" class="nav-link right-bar-toggle waves-effect">
+                        <i class="fe-settings noti-icon"></i>
+                    </a>
+                </li>
+               
+
+            </ul> -->
+        </div>
+        <!-- end Topbar  -->
+
+        <!-- ========== Left Sidebar Start ========== -->
+
+
+        <!-- ============================================================== -->
+        <!-- Start Page Content here -->
+        <!-- ============================================================== -->
+        
+
+
+        <div class="">
+            <div class="">
+
+                <!-- Start Content-->
+                <div class="">
+
+                    <div class="row">
+
+                        <div class="col-12">
+                            <div class="inbox-app-main">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <aside id="sidebar" class="nano">
+                                            <div class="nano-content">
+
+                                                
+
+                                                <div class="mt-5">
+                                                    <img height="24px" src="assets/images/project-default-pic.svg" alt="user-image" class="ml-4">
+                                                        <span class="pro-user-name ml-1">
+                                                            <span  id="project_name">STKARIZATALEP</span> <br> <span class="ml-5" id="lastname">Yazılım Projesi</span>
+                                                        </span>
+                                                       
+                                                </div>
+                                                
+                                                <div class="text-center  mt-3"> <a href="jirakonular1.html"><span class="mr-1"><i class="mdi mdi-arrow-left"></i></span>Projeye geri dön</a></div>
+                                                <div class="separator"></div>
+                                                <!-- </div> -->
+                                                <menu class="menu-segment ">
+                                                    <div>
+                                                        <div><button style="background: transparent; border: 0px" class="btn btn-secondary text-white"><a class="text-white"href="createproje.html">Ayrıntılar</a></button> </div>
+                                                        
+                                                        <div><button  data-toggle="modal"
+                                                            data-target="#ozetincele" style="background: transparent; border: 0px" class="btn btn-secondary text-white"><a class="text-white" >Özet</a></button></div>
+                                                        <div><button style="background: transparent; border: 0px" class="btn btn-secondary text-white"><a class="text-white"href="createproje.html">Kişiler</a></button></div>
+                                                        <div><button style="background: transparent; border: 0px" class="btn btn-secondary text-white"><a class="text-white"href="createproje.html">İzinler</a></button></div>
+                                                        <div><button style="background: transparent; border: 0px" class="btn btn-secondary text-white"><a class="text-white"href="createproje.html">Özellikler</a></button></div>
+                                                        <div><button style="background: transparent; border: 0px" class="btn btn-secondary text-white"><a class="text-white"href="createproje.html">Araç zinciri</a></button></div>
+                                                        <div><button style="background: transparent; border: 0px" class="btn btn-secondary text-white"><a class="text-white"href="createproje.html">Automation</a></button></div>
+                                                        <div><button data-toggle="modal"
+                                                            data-target="#isakisi" style="background: transparent; border: 0px" class="btn btn-secondary text-white"><a class="text-white">İş Akışları</a></button></div>
+                                                        <div  class="btn-group">
+                                                            
+                                                            <button style="background: transparent; border: 0px" type="button"
+                                                                class="btn btn-secondary dropdown-toggle waves-effect waves-light"
+                                                                data-toggle="dropdown" aria-expanded="false"> Konular
+                                                                
+                                                            </button>
+                                                            <div class="dropdown-menu ">
+                                                                    <a  data-toggle="modal"
+                                                                    data-target="#turler_modal"  class="dropdown-item text-white">Türler</a>                                                                        
+                                                                    <a  href="javascript:void(0);" class="dropdown-item">Yerleşim</a>
+                                                                    <a  href="javascript:void(0);" class="dropdown-item">Ekranlar</a>
+                                                                    <a  href="javascript:void(0);" class="dropdown-item">Alanlar</a>
+                                                                    <a  href="javascript:void(0);" class="dropdown-item">Toplayıcılar</a>
+                                                                    <a  href="javascript:void(0);" class="dropdown-item">Güvenlik</a>                                                                             
+                                                            </div>
+                                                        </div> 
+                                                        <div><button style="background: transparent; border: 0px" class="btn btn-secondary text-white"><a class="text-white"href="createproje.html">Bileşenler</a></button></div>
+                                                        <div  class="btn-group">
+                                                            
+                                                            <button style="background: transparent; border: 0px" type="button"
+                                                                class="btn btn-secondary dropdown-toggle waves-effect waves-light"
+                                                                data-toggle="dropdown" aria-expanded="false"> Uygulamalar
+                                                                
+                                                            </button>
+                                                            <div id="konular"  class="dropdown-menu ">
+                                                                    <a  href="javascript:void(0);" class="dropdown-item">Slack integration</a>                                                                        
+                                                                                                                                               
+                                                            </div>
+                                                        </div> 
+
+                                                        <div><button style="background: transparent; border: 0px; font-size: small;" class="btn btn-secondary text-white"><a class="text-white"href="createproje.html">Geliştirme Ayarları</a></button></div>
+                                                    </div>
+                                               
+                                                    <div class="separator"></div>
+                                                    <p style="font-size: 13px;">Şirket tarafından yönetilen bir projedesiniz</p>
+                                                    <a class="text-white" href="filtreler">Daha fazla bilgi</a>
+                                                </menu>
+                                                <div class="separator"></div>
+                                               
+                                                <div class="bottom-padding"></div>
+                                            </div>
+                                        </aside>
+                                    </div> <!-- end col -->
+
+                                    <div class="col-md-9">
+                                        <main id="main">
+                                            <div class="overlay"></div>
+                                            <header class="header">
+                                                <a class="ml-1"href="#projects">Projeler</a> / <a id="project_name" href="#projects">STK</a> / <a id="project_name" href="#projects">Proje Ayarları</a>                                              
+                                                    <h5 class="ml-1">Ayrıntılar</h5>                                       
+                                                    <div class="clearfix"></div>
+                                            </header>
+
+                                            <div id="main-nano-wrapper mt-2" class="nano">
+                                                <div class="nano-content">
+                                                    <div class="row">
+                                                        <div class="col-lg-9">
+                                                            <div class="card-box">
+
+                                                                <form style="margin-left: 200px;" role="form">
+                                                                    <div class="form-group">
+                                                                        
+                                                                        <label for="projeselect">Ad*</label>
+                                                                        <input type="text" id="tahmin" class="form-control">
+                                        
+                                                                    </div>
+                                                                    <div class="form-group">
+                                                                        
+                                                                        <label for="projeselect">Anahtar*</label>
+                                                                        <input type="text" id="tahmin" class="form-control">
+                                        
+                                                                    </div>
+                                                                    <hr>
+                                        
+                                                                    <div class="form-group">
+                                                                        <label for="proje_url"> URL</label>
+                                                                        <input id="ozet" type="text" class="form-control" placeholder="">
+                                                                    </div>
+                                                                    <div class="form-group">
+                                                                        <label for="projeselect">Proje Türü*</label>
+                                                                        <select class="form-control form-select form-select-sm"
+                                                                            aria-label="Default select example">
+                                                                            <option id="proje_turu" value="">Yazılım Geliştirme</option>
+                                                                            <option value="">Hizmet Yönetimi</option>
+                                                                            <option value="">İş yönetimi</option>
+                                                                            <option value="">Pazarlama</option>
+                                                                            <option value="">İnsan Kaynakları</option>
+                                                                            <option value="">Finans</option>
+                                                                            <option value="">Tasarım</option>
+                                                                            <option value="">Kişisel</option>
+                                                                            <option value="">Operasyonel</option>
+                                                                            <option value="">Hukuk</option>
+                                                                            <option value="">Satış</option>
+                                        
+                                                                        </select>
+                                        
+                                                                    </div>
+                                                                    <div class="form-group">
+                                                                        <label for="ekuploaddetay">Görsel Seçin</label>
+                                                                        <div class="input-group mb-3">
+                                                                            <input type="file" id="ekuploaddetay" class="form-control">
+                                                                        </div>
+                                                                    </div>
+                                        
+                                                                    <div class="form-group">
+                                                                        <label for="summernote">Açıklama</label>
+                                                                        <div id="summernote" class="summernote">
+                                                                            <h6>Hello Summernote</h6>
+                                                                            <ul>
+                                                                                <li>
+                                                                                    Select a text to reveal the toolbar.
+                                                                                </li>
+                                                                            </ul>
+                                                                        </div>
+                                                                    </div>
+                                        
+                                                                    <div class="form-group">
+                                                                        <label for="proje_lider">Proje Lideri*</label>
+                                                                        <div id="proje_lider" class="form-control"><img height="24px" src="assets/images/users/user-1.jpg" alt="user-image" class="rounded-circle">
+                                                                            <span class="pro-user-name ml-1">
+                                                                                <span id="username">İrfan</span> <span id="lastname">Koçaksoy</span>
+                                                                            </span></div>
+                                                                    </div>
+                                                                    <div class="form-group">
+                                                                        <label for="varsayılan_atanan">Varsayılan Atanan</label>
+                                                                        <select id="varsayılan_atanan" class="form-control form-select form-select-sm"
+                                                                            aria-label="Default select example">
+                                                                            <option id="edit_version" value="">Atanmamış</option>
+                                                                            <option value="">Proje Lideri</option>
+                                                                            
+                                                                        </select>
+                                                                    </div>
+                                                                  
+                                                                    <div class="form-group mb-5">
+                                                                        
+                                                                            <div class="btn-toolbar form-group mb-1">
+                                                                                <div class="float-right">
+                                                                                    <button class="btn btn-success waves-effect waves-light"><span>Ayrıntıları Kaydet</span> <i
+                                                                                        class="fas fa-paper-plane ml-1"></i></button>
+                                                                                    <button type="button"
+                                                                                        class="btn btn-danger waves-effect waves-light  mr-1"><span>İptal </span><i
+                                                                                            class="far fa-trash-alt"></i></button>
+                                                                                    
+                                                                                </div>
+                                                                            </div>
+                                                                            
+                                                                    </div>
+                                                                    
+                                                                </form>
+                                                                
+                                                                
+                                                            </div>
+                                                            
+                                                        </div>
+                                                        
+                                                    </div>
+                                                    
+                                                    
+                                                </div>
+
+
+                                            </div>
+                                            
+                                            
+                                   
+                                        </main>
+                                        
+                                    </div>
+                                    
+                                   
+                                  
+                                    </div>
+                                </div> <!-- end col -->
+                            </div><!-- end row -->
+                        </div>
+
+                    </div>
+
+                </div>
+                <!-- End row -->
+
+
+            </div> <!-- container-fluid -->
+
+        </div> <!-- content -->
+
+
+
+    </div>
+
+    <!-- ============================================================== -->
+    <!-- End Page content custom-modal-->
+    <!-- ============================================================== -->
+
+
+    </div>
+    <!-- END wrapper -->
+     <!-- Start Özet Modal -->
+    <div id="ozetincele" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="projeolustur">Özet</h4>
+                    
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                </div>
+                <div class="modal-body">
+                    <h5 >Konu Türleri</h5>
+                    <p>Hatalar veya görevler gibi farklı konu türlerini takip edin. Her konu türü farklı şekilde yapılandırılabilir.</p>
+                    <hr>
+                    <h6>Şema:</h6> 
+                     
+                    
+                    
+                    
+                    
+                    <div class="card-box mb-0">
+                       <div><img id="isakisi_hata" height="16px" src="assets/images/kırmızısvg.svg" alt=""><span class="ml-1">Hata</span></div>
+                       <div><img id="isakisi_epik" height="16px" src="assets/images/morsvg.svg" alt=""><span class="ml-1">Epik</span></div>
+                       <div><img id="isakisi_iyiles" height="16px" src="assets/images/yeşilsvg.svg" alt=""><span class="ml-1">İyileştirme</span></div>
+                       <div><img id="isakisi_yeniozellik" height="16px" src="assets/images/yeşilplus.svg" alt=""><span class="ml-1">Yeni Özellik</span></div>
+                       <div><img id="isakisi_altorev" height="16px" src="assets/images/maviyorumsvg.svg" alt=""><span class="ml-1">Alt Görev</span></div>
+                       <div><img id="isakisi_gorev" height="16px" src="assets/images/mavitik.svg" alt=""><span class="ml-1">Görev</span></div>
+                    </div>
+                    <hr>
+                  <h5>İş Akışları</h5>
+                   <p>Konular takımınızın uygulamalarını yansıtan süreçleri takip edebilir. İş akışı, bir konunun takip edeceği adımlar dizisini tanımlar, ör. "Devam Ediyor", "Çözüldü".</p>
+                   <h6>Şema:</h6>
+                   <div><a  class="text-white"  href="#">KOC: Software Simplified Workflow Scheme</a></div>
+                   <div class="mt-1"><a class="text-white" href="#"><i class="mdi mdi-transit-connection-variant"></i> Software Simplified Workflow for Project KOC <i class="mdi mdi-grease-pencil"></i></a></div>
+                   <hr>
+                   <h5>Ekranlar</h5>
+                   <div>
+                        <p>Ekranlar, bir konu için gösterilecek alanları düzenleyebilmenizi sağlar. Bir konu oluşturulduğunda, görüntülendiğinde, düzenlendiğinde veya bir iş akışında durum değişikliği geçirdiğinde farklı ekranlar kullanılabilir.</p>
+                        <h6>Şema:</h6>
+                        <p><a class="text-white"  href="#">KOC: Software Simplified Workflow Scheme</a></p>
+                        <p><a class="text-white"  href="#">KOC: Software Development Default Screen Scheme</a></p>
+                        <p><a class="text-white"  href="#">KOC: Software Development Bug Screen Scheme</a></p>
+                   </div>
+                   <hr>
+                   <h5>Alanlar</h5>
+                   <div>
+                        <p>Farklı konularda farklı bilgi alanları olabilir. Alan yapılandırmaları, alanların projede nasıl davranacağını belirler; ör. zorunlu/isteğe bağlı, gizli/görünür.</p>
+                        <h6>Şema:</h6>
+                        <p><a class="text-white"  href="#">Sistem Varsayılan Alan Yapılansırması</a></p>
+                        <p><a class="text-white"  href="#">Default Field Configuration</a></p>
+                        
+                   </div>
+                   <hr>
+                   <h5>Sürümler</h5>
+                   <div>
+                        <p>Bu yazılım,  projelerinizde farklı sürümleri takip etmenize olanak verir; 1.0, 2.0. Konular farklı sürümlere atanabilir.</p>
+                        <p>Bu projede arşivlenmemiş sürüm yok. <a class="ml-2"  href="#"> Bir sürüm ekle</a></p>
+                        
+                        
+                   </div>
+                   <hr>
+                   <h5>Bileşenler</h5>
+                   <div>
+                        <p>Projeler bileşenlere ayrılabilir, ör. "Veritabanı", "Kullanıcı Arayüzü". Ardından konular da farklı bileşenlere göre kategorize edilebilir.</p>
+                        <p>Bu projede hiç bileşen bulunmuyor. <a class="ml-2"  href="#"> Bir bileşen ekle</a></p>
+                        
+                        
+                   </div>
+                   <hr>
+                   <h5>Roller</h5>
+                   <div>
+                        <p>Bu yazılım projenizdeki belirli rollere belirli kişileri atamanızı sağlar. Roller, bildirimler ve izinler gibi diğer ayarlar belirlenirken kullanılır.</p>
+                        <p>Proje Lideri : <a class="ml-2"  href="#"><span><img height="16px" src="assets/images/users/user-1.jpg"></span><span class="ml-2" id="username">İrfan</span> <span id="lastname">Koçaksoy</span></a></p>
+                        <p>Varsayılan Atanan : <span> Atanmamış</span></p>
+                        <p>Roles : <span> <a>proje rollerini görüntüleyin</a></span></p>
+                        
+                   </div>
+                   <hr>
+                   <h5>İzinler</h5>
+                   <div>
+                        <p>Proje izinleri projenize kimlerin erişebileceğini ve bu kişilerin hangi işlemleri gerçekleştirebileceğini kontrol etmenizi sağlar, ör. "Konularda Çalışma". Kişilere belirli bir konuya erişim vermek için konu izinleri kullanılır.</p>
+                        <p>Şema : <span> <a>KOC yazılım izin şeması</a></span></p>
+                        <p>Konular : <span> <a>Yok</a></span></p>
+                        
+                   </div>
+                   <hr>
+                   <h5>Bildirimler</h5>
+                   <div>
+                        <p>Bu yazlım, uygun kişilere projenizdeki belirli etkinlikleri bildirebilir, ör. "Konuya Yorum Eklendi". Bildirim alacak kişileri, grupları veya rolleri seçebilirsiniz.</p>
+                        <p>Şema : <span> <a>Default Notification Scheme</a></span></p>
+                        <p>E-posta : <span> <a>yazlim@denemekocyozgarts.atlassian.net</a></span></p>
+                        
+                   </div>
+                   <hr>
+                   <h5>Geliştirme Araçları</h5>
+                   <div>
+                        <p>Kullanıcıların doğrudan bu yazılımda konularından dal oluşturmasına ve işlenenler, incelemeler, derlemeler ve dağıtımlar için görünürlük sağlamasına izin vermek istiyorsanız geliştirme araçlarınızı bu yazılım ile entegre edin.</p>
+                        <p>İzinleri görüntüleme : <span> proje Rolü (bu yazılım-project)</span></p>
+                            
+                        <p>Uygulamalar : <span> <a>yok</a></span></p>
+                            
+                        
+                   </div>
+                   <hr>
+                   <h5>Ayarlar</h5>
+                   <div>
+                        <p>Bazı genel proje yapılandırma seçenekleri.</p>
+                        <h6>Devre dışı bırakıldı <a class="ml-3"  href="#">Etkinleştir</a></h6>
+                        
+                   </div>
+                </div>
+                
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div>
+    <!-- /.modal -->
+    <!-- Start İş Akışı Modal -->
+    <div id="isakisi" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="projeolustur">İş Akışları</h4>
+                    
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                </div>
+                <div class="modal-body">
+                    <h3 >KOC: Software Simplified Workflow Scheme</h3>   
+                  <div>
+                    <div  class="btn-group">
+                        
+                        <button  type="button"
+                            class="btn btn-secondary btn-sm dropdown-toggle waves-effect waves-light"
+                            data-toggle="dropdown" aria-expanded="false"> <i class="mdi mdi-chevron-down mt-1"></i> İş Akışı Ekleyin
+                            
+                        </button>
+                        <div id="isakislari"  class="dropdown-menu ">
+                                <a  href="javascript:void(0);" class="dropdown-item">Mevcut Olanı Ekle</a>   
+                                <a  href="javascript:void(0);" class="dropdown-item">Marketplace'ten Seçin</a>                                                                      
+                                                                                                           
+                        </div>
+                    </div> 
+
+                    <button  class="btn btn-secondary btn-sm text-white ml-2"><a class="text-white"href="createproje.html">Şema Değiştirin</a></button>
+                  </div>
+                     
+                    <hr>
+                    <div class="row">
+                        <div class="col-6">
+                            <h6 class="mt-1">İş akışı</h6>
+                            <p>Software Simplified Workflow for Project KOC(Farklı görüntüle metin / diyagram)</p>
+                        </div>
+                        <div class="col-3">
+                            <h6 class="mt-1">Konu türleri</h6>
+                            <div><img id="isakisi_hata" height="16px" src="assets/images/kırmızısvg.svg" alt=""><span class="ml-1">Hata</span></div>
+                            <div><img id="isakisi_epik" height="16px" src="assets/images/morsvg.svg" alt=""><span class="ml-1">Epik</span></div>
+                            <div><img id="isakisi_iyiles" height="16px" src="assets/images/yeşilsvg.svg" alt=""><span class="ml-1">İyileştirme</span></div>
+                            <div><img id="isakisi_yeniozellik" height="16px" src="assets/images/yeşilplus.svg" alt=""><span class="ml-1">Yeni Özellik</span></div>
+                            <div><img id="isakisi_altorev" height="16px" src="assets/images/maviyorumsvg.svg" alt=""><span class="ml-1">Alt Görev</span></div>
+                            <div><img id="isakisi_gorev" height="16px" src="assets/images/mavitik.svg" alt=""><span class="ml-1">Görev</span></div>
+                        </div>
+                        <div class="col-3">
+                            <h6 class="mt-1">Düzenle</h6>
+                            <a href="#"><i class="mdi mdi-grease-pencil"></i></a>
+                        </div>
+                    </div>
+                    <hr>                               
+                </div>             
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div>
+    <!-- End İş Akışı Modal -->
+    <!--Türler Modal Start-->
+    <div id="turler_modal" class="modal fade show" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" >
+        <div class="modal-dialog modal-full-width">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="projeolustur">Konu Türleri</h4>
+                    
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                    
+                </div>
+                <div class="modal-body">
+                   <div class="row">
+                    <div class="col-10">
+                        <h4  >KOC: Software Development Issue Type Scheme</h4>   
+                      
+                    </div>
+                    <div class="col-2">
+                        <div class="btn-group mb-2">                                                          
+                            <button  type="button"
+                                class="btn btn-secondary dropdown-toggle waves-effect waves-light"
+                                data-toggle="dropdown" aria-expanded="false"><i class="fe-settings"></i> İşlemler                          
+                            </button>
+                            <div id="konular"  class="dropdown-menu ">
+                                    <a  href="javascript:void(0);" class="dropdown-item">Konu türlerini düzenleyin</a>
+                                    <a  href="javascript:void(0);" class="dropdown-item">Farklı bir şema kullanın</a>                                                                                                                                                                              
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                    
+                   <p>Hatalar veya görevler gibi farklı konu türlerini takip edin. Her konu türü farklı şekilde yapılandırılabilir.</p>
+                   <p>Bu iş akışı şeması, bu proje için hangi konu türlerinin geçerli olduğunu tanımlar. Kullanılan konu türlerini değiştirmek için farklı bir konu türü şeması seçebilir veya seçili şemayı değiştirebilirsiniz.</p>
+                     
+                    
+                    <div class="responsive-table-plugin">
+                        <div class="table-rep-plugin">
+                            <div class="table-responsive"
+                                data-pattern="priority-columns">
+                                <table id="tech-companies-1"
+                                    class="table table-striped mb-0 " data-id="mytable">
+                                    <thead>
+                                        <tr>
+                                            <th>Konu Türü</th>
+                                            <th>Açıklama</th>
+                                            <th>İş Akışı</th>
+                                            <th>Alan Yapılandırması</th>
+                                            <th>Ekran</th>
+                                            
+                                           
+                                        </tr>
+                                    </thead>
+                                    <tbody >
+                                        <tbody>  
+                                             
+                                            
+                                            
+                                            
+                                            
+                                        <tr>
+                                            <td > <img id="isakisi_hata" height="16px" src="assets/images/kırmızısvg.svg" alt=""><span class="ml-1"><a style="font-size: 12px;" href="#">Hata</a></span></td>
+                                            <td id="turler_konuturu"> Bir sorun veya hata</td>
+                                            <td id="turler_acıklama"><a href="#">Software Simplified Workflow for Project KOC</a></td>
+                                            <td id="turler_isakisi"><a href="#">Default Field Configuration</a></td>
+                                            <td id="turler_ekran"><a href="#">KOC: Software Development Bug Screen Scheme</a></td>
+                                        </tr>
+                                        <tr><span  class="ml-1"><a style="font-size: 12px;" href="#">Yeni özellik</a></span>
+                                            <td > <img id="isakisi_yeniozellik" height="16px" src="assets/images/yeşilplus.svg" alt=""><a href="#"><span  class="ml-1"><a style="font-size: 12px;" href="#">Yeni özellik</span></a></td>
+                                            <td id="turler_konuturu">Ürünün henüz geliştirilmemiş yeni bir özelliği.</td>
+                                            <td id="turler_acıklama"><a href="#">Software Simplified Workflow for Project KOC</a></td>
+                                            <td id="turler_isakisi"><a href="#">Default Field Configuration</a></td>
+                                            <td id="turler_ekran"><a href="#">KOC: Software Development Bug Screen Scheme</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td  > <img id="isakisi_iyiles" height="16px" src="assets/images/yeşilsvg.svg" alt=""><span class="ml-1"><a style="font-size: 12px;" href="#">İyileştirme</a></span></td>
+                                            <td id="turler_konuturu">Mevcut bir özellik veya görevde iyileştirme veya geliştirme.</td>
+                                            <td id="turler_acıklama"><a href="#">Software Simplified Workflow for Project KOC</a></td>
+                                            <td id="turler_isakisi"><a href="#">Default Field Configuration</a></td>
+                                            <td id="turler_ekran"><a href="#">KOC: Software Development Bug Screen Scheme</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td  > <img id="isakisi_epik" height="16px" src="assets/images/morsvg.svg" alt=""><span class="ml-1"><a style="font-size: 12px;"  href="#">Epik</a></span></td>
+                                            <td id="turler_konuturu">İlgili hata, hikaye ve görev koleksiyonu</td>
+                                            <td id="turler_acıklama"><a href="#">Software Simplified Workflow for Project KOC</a></td>
+                                            <td id="turler_isakisi"><a href="#">Default Field Configuration</a></td>
+                                            <td id="turler_ekran"><a href="#">KOC: Software Development Bug Screen Scheme</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td  > <img id="isakisi_altorev" height="16px" src="assets/images/maviyorumsvg.svg" alt=""><span class="ml-1"><a style="font-size: 12px;" href="#">Alt Görev</a></span></td>
+                                            <td id="turler_konuturu">Daha büyük bir görevin parçası olan küçük bir çalışma.</td>
+                                            <td id="turler_isakisi"><a href="#">Software Simplified Workflow for Project KOC</a></td>
+                                            <td id="turler_isakisi"><a href="#">Default Field Configuration</a></td>
+                                            <td id="turler_ekran"><a href="#">KOC: Software Development Bug Screen Scheme</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td > <img id="isakisi_gorev" height="16px" src="assets/images/mavitik.svg" alt=""><span class="ml-1"><a style="font-size: 12px;" href="#">Görev</a></span></td>
+                                            <td id="turler_konuturu">Küçük, belirli bir iş parçası.</td>
+                                            <td id="turler_isakisi"><a href="#">Software Simplified Workflow for Project KOC</a></td>
+                                            <td id="turler_isakisi"><a href="#">Default Field Configuration</a></td>
+                                            <td id="turler_ekran"><a href="#">KOC: Software Development Bug Screen Scheme</a></td>
+                                       </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                        </div>
+                    </div>
+                    <hr>                               
+                </div>             
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div>
+    <!-- Türler Modal End-->
+  
+    <!--burada2-->
+    <!-- Right Sidebar -->
+    <div class="right-bar">
+        <div class="rightbar-title">
+            <a href="javascript:void(0);" class="right-bar-toggle float-right">
+                <i class="dripicons-cross noti-icon"></i>
+            </a>
+            <span class="logo-lg">
+                <img src="assets/images/logo-light.png" alt="" height="60">
+                <span class="logo-lg-text-light"></span>
+            </span>
+        </div>
+        <div class="slimscroll-menu">
+
+            <!-- Menü-->
+
+            <div class="user-box text-center">
+
+                <div class="dropdown">
+                    <a href="#" class="text-dark dropdown-toggle h5 mt-2 mb-1 d-block" data-toggle="dropdown">AFAC
+                        Yazılım Proje Adı</a>
+                    <div class="dropdown-menu user-pro-dropdown">
+
+                        <!-- item-->
+                        <a href="javascript:void(0);" class="dropdown-item notify-item">
+                            <i class="fe-user mr-1"></i>
+                            <span>My Account</span>
+                        </a>
+
+                        <!-- item-->
+                        <a href="javascript:void(0);" class="dropdown-item notify-item">
+                            <i class="fe-settings mr-1"></i>
+                            <span>Settings</span>
+                        </a>
+
+                        <!-- item-->
+                        <a href="javascript:void(0);" class="dropdown-item notify-item">
+                            <i class="fe-lock mr-1"></i>
+                            <span>Lock Screen</span>
+                        </a>
+
+                        <!-- item-->
+                        <a href="javascript:void(0);" class="dropdown-item notify-item">
+                            <i class="fe-log-out mr-1"></i>
+                            <span>Logout</span>
+                        </a>
+
+                    </div>
+                </div>
+                <p class="text-muted">Yazılım Projesi</p>
+                <ul class="list-inline">
+                    <li class="list-inline-item">
+                        <a href="#" class="text-muted">
+                            <i class="mdi mdi-settings"></i>
+                        </a>
+                    </li>
+
+                    <li class="list-inline-item">
+                        <a href="#" class="text-custom">
+                            <i class="mdi mdi-power"></i>
+                        </a>
+                    </li>
+                    <button class="js-theme-switch" type="button" aria-label="Theme Switch Button">
+                        <span class="main-nav__item-icon">🌓</span><span class="text"></span>
+                        </button>
+                </ul>
+            </div>
+            <!--burada sabit-->
+            <!--- Sidemenu -->
+            <div id="sidebar-menu">
+
+                <ul class="metismenu" id="side-menu">
+                    <li>
+                        <a href="index.html">
+                            <i class="mdi mdi-view-dashboard"></i>
+                            <span> Projeye Geri Dön </span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="javascript: void(0);">
+                            <!-- <i class="mdi mdi-invert-colors"></i> -->
+                            <span> PLANLAMA </span>
+                            <span class="menu-arrow"></span>
+                        </a>
+                        <ul class="nav-second-level" aria-expanded="false">
+                            <li><a href="ui-buttons.html">Pano</a></li>
+                            <li><a href="ui-buttons.html">Raporlor</a></li>
+                            <li><a href="ui-cards.html">Konular</a></li>
+                            <li><a href="ui-draggable-cards.html">Bileşenler</a></li>
+
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="javascript: void(0);">
+                            <!-- <i class="mdi mdi-texture"></i> -->
+                            <span class="badge badge-warning float-right"></span>
+                            <span> GELİŞTİRME </span>
+                        </a>
+                        <ul class="nav-second-level" aria-expanded="false">
+                            <li><a href="form-elements.html">Kod</a></li>
+                            <li><a href="form-advanced.html">Sürümler</a></li>
+
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="calendar.html">
+                            <!-- <i class="mdi mdi-calendar"></i> -->
+                            <span> Proje Sayfaları </span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="inbox.html">
+                            <!-- <i class="mdi mdi-email"></i> -->
+                            <span> Kısayol Ekleyin </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="inbox.html">
+                            <!-- <i class="mdi mdi-email"></i> -->
+                            <span> Proje Ayarları </span>
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+            <!-- End Sidebar -->
+
+            <div class="clearfix"></div>
+
+            <!-- Sidebar -left -->
+
+
+            <!-- Left Sidebar End -->
+        </div> <!-- end slimscroll-menu-->
+    </div>
+    <!-- /Right-bar -->
+
+    <!-- Right bar overlay-->
+    <div class="rightbar-overlay"></div>
+ 
+  
+
+    <!-- Vendor js -->
+    <script src="assets/js/vendor.min.js"></script>
+
+    <!--summernote init-->
+    <script src="assets/libs/summernote/summernote-bs4.min.js"></script>
+
+    <!-- Modal-Effect -->
+    <script src="assets/libs/custombox/custombox.min.js"></script>
+
+
+    <script src="assets/js/pages/inbox.init.js"></script>
+
+    <!-- App js -->
+    <script src="assets/js/app.min.js"></script>
+
+
+</body>
+
+</html>
